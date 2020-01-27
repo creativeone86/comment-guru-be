@@ -25,7 +25,7 @@ export class PostsService {
                 },
                 {
                     path: 'comments',
-                    options: {sort: {created: -1}},
+                    options: {sort: {created: 1}},
                     populate: [
                         {
                             path: 'author',
@@ -33,7 +33,7 @@ export class PostsService {
                         },
                         {
                             path: 'replies',
-                            options: {sort: {created: -1}},
+                            options: {sort: {created: 1}},
                             populate: {
                                 path: 'author',
                                 select: 'username'
