@@ -1,6 +1,6 @@
 # Message Guru - BE
 
-## Project setup
+## Project requirements
 
 Installed Docker
 
