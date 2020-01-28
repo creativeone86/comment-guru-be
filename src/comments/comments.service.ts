@@ -41,12 +41,4 @@ export class CommentsService {
         return this.commentModel.findOne({_id: MUUID.from(commentId)});
     }
 
-    // async createPost(userId, content) {
-    //     const post = new this.postModel({
-    //         author: MUUID.from(userId),
-    //         content
-    //     });
-    //     return post.save();
-    // }
-
 }
