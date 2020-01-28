@@ -12,7 +12,7 @@ export class UsersController {
             return  (await this.usersService.create(createUserDto));
         } catch (e) {
             if (e.code === 11000) {
-                throw new HttpException(`The name already exists`, HttpStatus.CONFLICT);
+                throw new HttpException(`The username already exists`, HttpStatus.CONFLICT);
             } else {
                 throw new HttpException(e.message, HttpStatus.BAD_REQUEST);
 
